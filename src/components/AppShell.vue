@@ -38,6 +38,7 @@ import { ref, computed } from 'vue'
 import { useStore, refresh, controllersApi } from '../data/store.js'
 import IconChart from './IconChart.vue'
 import DashboardView from '../views/DashboardView.vue'
+import MonthlyReviewView from '../views/MonthlyReviewView.vue'
 import AccountsView from '../views/AccountsView.vue'
 import TransactionsView from '../views/TransactionsView.vue'
 import BudgetView from '../views/BudgetView.vue'
@@ -48,6 +49,7 @@ import ProfileView from '../views/ProfileView.vue'
 
 const NAV = [
   { key: 'dashboard', label: '财务看板', icon: 'chart' },
+  { key: 'review', label: '月度复盘', icon: 'review' },
   { key: 'accounts', label: '我的账户', icon: 'account' },
   { key: 'transactions', label: '记账', icon: 'add' },
   { key: 'budget', label: '月度预算', icon: 'target' },
@@ -59,6 +61,7 @@ const NAV = [
 
 const VIEWS = {
   dashboard: DashboardView,
+  review: MonthlyReviewView,
   accounts: AccountsView,
   transactions: TransactionsView,
   budget: BudgetView,

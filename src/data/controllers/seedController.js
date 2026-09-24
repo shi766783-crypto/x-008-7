@@ -49,7 +49,7 @@ export function seedDemoData() {
   txs.push(mk(TRANSACTION_TYPES.INCOME, wechat.id, 200, dateDaysAgo(9), '红包', '生日红包'))
   txs.push(mk(TRANSACTION_TYPES.INCOME, bank.id, 300, dateDaysAgo(3), '理财', '理财收益'))
 
-  const exp = (amount, daysAgo, category, note, isLarge = false) => mk(TRANSACTION_TYPES.EXPENSE, alipay.id, amount, dateDaysAgo(daysAgo), category, note, isLarge)
+  const exp = (amount, daysAgo, category, note, isLarge = false) => txs.push(mk(TRANSACTION_TYPES.EXPENSE, alipay.id, amount, dateDaysAgo(daysAgo), category, note, isLarge))
   exp(45, 0, '餐饮', '午餐')
   exp(28, 0, '交通', '地铁')
   exp(320, 1, '购物', '日用品', true)

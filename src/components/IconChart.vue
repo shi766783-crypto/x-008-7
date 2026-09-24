@@ -20,6 +20,7 @@ const paths = {
   list: 'M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z',
   target: 'M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a6 6 0 110 12 6 6 0 010-12zm0 4a2 2 0 110 4 2 2 0 010-4z',
   trophy: 'M6 3h12v2a6 6 0 01-12 0zM8 7v1a4 4 0 008 0V7zm-2 2H3a1 1 0 001 1h3zm12 0h3a1 1 0 01-1 1h-3zM7 21h10v2H7zm1-2h8l-1-5h-6z',
+  review: 'M6 2h8l6 6v14H6V2zm7 1.5V8h4.5zM9 12h6v2H9v-2zm0 4h6v2H9v-2z',
   user: 'M12 12a4 4 0 100-8 4 4 0 000 8zm0 2c-5 0-8 2.5-8 5v3h16v-3c0-2.5-3-5-8-5z'
 }
 
