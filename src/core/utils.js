@@ -36,9 +36,24 @@ export function monthListFrom(monthsBack) {
   return out
 }
 
+export function shiftMonth(monthStr, delta) {
+  const [year, month] = monthStr.split('-').map(Number)
+  const d = new Date(year, month - 1 + delta, 1)
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
+}
+
 export function money(value) {
   const n = Number(value) || 0
   return n.toLocaleString('zh-CN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+}
+
+// 用于复盘文案：12000 -> 1.2万，1800 -> 1,800，45.5 -> 45.5
+export function compactMoney(value) {
+  const n = Number(value) || 0
+  const abs = Math.abs(n)
+  const trim = (v) => v.toLocaleString('zh-CN', { maximumFractionDigits: 2 })
+  if (abs >= 10000) return `${trim(Math.round((n / 10000) * 100) / 100)}万`
+  return trim(Math.round(n * 100) / 100)
 }
 
 export function daysBetween(dateStrA, dateStrB) {

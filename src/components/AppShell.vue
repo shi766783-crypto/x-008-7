@@ -41,6 +41,7 @@ import DashboardView from '../views/DashboardView.vue'
 import AccountsView from '../views/AccountsView.vue'
 import TransactionsView from '../views/TransactionsView.vue'
 import BudgetView from '../views/BudgetView.vue'
+import MonthlyReviewView from '../views/MonthlyReviewView.vue'
 import SavingsGoalsView from '../views/SavingsGoalsView.vue'
 import ChallengesView from '../views/ChallengesView.vue'
 import RankingsView from '../views/RankingsView.vue'
@@ -51,6 +52,7 @@ const NAV = [
   { key: 'accounts', label: '我的账户', icon: 'account' },
   { key: 'transactions', label: '记账', icon: 'add' },
   { key: 'budget', label: '月度预算', icon: 'target' },
+  { key: 'review', label: '月度复盘', icon: 'calendar' },
   { key: 'goals', label: '储蓄目标', icon: 'list' },
   { key: 'challenges', label: '记账挑战', icon: 'trophy' },
   { key: 'rankings', label: '排行榜', icon: 'chart' },
@@ -62,6 +64,7 @@ const VIEWS = {
   accounts: AccountsView,
   transactions: TransactionsView,
   budget: BudgetView,
+  review: MonthlyReviewView,
   goals: SavingsGoalsView,
   challenges: ChallengesView,
   rankings: RankingsView,
